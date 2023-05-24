@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    flex-direction: column;
+    height: 113px;
+    justify-content: center;
+  
+    .bloclogo {
+      background-color: #ffffff;
+      height: 63px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  
+    nav {
+      height: 50px;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+    }
+    .localisation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  footer {
+    background-color: #353535;
+    margin-top: 40px;.feet {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+  
+
+  
+  .foot {
+    padding-bottom: 10px; 
+    .iconefooter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  }
+  }
+  
+  
+  
+ 
+  

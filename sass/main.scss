@@ -1,49 +1,15 @@
-.primary-color {
-  color: #9356dc;
-}
-.second-color {
-  color: #ff79da;
-}
-.tierce-color {
-  color: #99e2d0;
-}
-
+@import "./utils/variables";
+@import"./Layout/layout";
+@import"./Composants/composants";
 body {
   min-width: 320px;
   background-color: #f7f7f7;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  height: 113px;
-  justify-content: center;
-}
 
-.bloclogo {
-  background-color: #ffffff;
-  height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-nav {
-  height: 50px;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-}
-
-.localisation {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .h1 {
-  font-family: "roboto";
+  font-family: $font2;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -57,7 +23,7 @@ nav {
 }
 
 p {
-  font-family: "roboto";
+  font-family: $font2;
   font-weight: 300;
   font-size: 18px;
   text-align: center;
@@ -65,7 +31,7 @@ p {
 }
 
 .h2 {
-  font-family: "roboto";
+  font-family: $font2;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
@@ -89,7 +55,7 @@ p {
 }
 
 h3 {
-  font-family: "roboto";
+  font-family: $font2;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -97,7 +63,7 @@ h3 {
 }
 
 h4 {
-  font-family: "roboto";
+  font-family: $font2;
   font-size: 17px;
   font-weight: 300;
   line-height: 25px;
@@ -109,18 +75,7 @@ h4 {
   justify-content: center;
 }
 
-.buton {
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  width: 218px;
-  height: 50px;
-  text-align: center;
-}
 
-.buton:hover {
-  border: 2px #9356dc solid;
-}
 
 .section2 {
   background-color: #ffffff;
@@ -135,18 +90,6 @@ h4 {
   margin-top: 30px;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
-  gap: 15px;
-  width: 80%;
-  height: 72px;
-  background: #f7f7f7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  text-align: center;
-}
 
 /*icone*/
 .fa-location-dot {
@@ -154,23 +97,23 @@ h4 {
 }
 
 .fa-utensils {
-  color: #ffffff;
+  color: $iconeblc;
 }
 
 .fa-handshake-angle {
-  color: #ffffff;
+  color: $iconeblc;
 }
 
 .fa-mobile-screen-button {
-  color: #7e7e7e;
+  color: $icone1;
 }
 
 .fa-list {
-  color: #7e7e7e;
+  color: $icone1;
 }
 
 .fa-store {
-  color: #7e7e7e;
+  color: $icone1;
 }
 
 .fa-heart {
@@ -221,32 +164,10 @@ img {
   padding-bottom: 35px;
 }
 
-footer {
-  background-color: #353535;
-  margin-top: 40px;
-}
-
-.feet {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  align-items: flex-start;
-}
-
 .Shrik1 {
-  font-family: "Shrikhand";
+  font-family: $font1;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
-}
-
-.foot {
-  padding-bottom: 10px;
-}
-
-.iconefooter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
