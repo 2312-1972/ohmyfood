@@ -74,10 +74,10 @@ p {
 .h2_blc {
   color: #ffffff;
 }
-.h2_blc--400 {
+.h2--blc--400 {
   font-weight: 400;
 }
-.h2_black {
+.h2--black {
   color: black;
 }
 h3 {
