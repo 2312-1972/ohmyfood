@@ -19,8 +19,9 @@ header {
   display: flex;
   flex-direction: column;
   height: 113px;
-  justify-content: center;
+  justify-content: center; 
 }
+
 header .bloclogo {
   background-color: #ffffff;
   height: 63px;
@@ -40,6 +41,7 @@ header .localisation {
   align-items: center;
   gap: 10px;
 }
+
 a {
   text-decoration: none;
   display: flex;
@@ -215,7 +217,7 @@ h5 {
   color: black;position: absolute;
   
 }
-.heart-empty{line-height: 1;}
+.heart-empty{z-index: 0;line-height: 1;}
 
 .heart-full {
   opacity: 0;
@@ -226,10 +228,9 @@ h5 {
 }
 .heart-full:hover {
   opacity: 1;
-  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+background-image:linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
-  -webkit-background-clip: text;line-height: 1;z-index: 1;
-}
+  -webkit-background-clip: text;}
 
 
 /**homepage section*/
@@ -333,6 +334,20 @@ footer .foot .iconefooter {
   font-weight: 400;
   color: #ffffff;
 }
+
+/**pages restaurants*/
+
+.sectionrestau {
+  display: flex;
+  flex-direction: column;background-color: #7e7e7e
+  ;}
+  .images{border-radius: 0;object-fit: cover;z-index: 0;}
+
+  .header {
+    display: flex;
+    height: 63px;
+  }
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (min-width: 1023px){
   body{width: 100%;}

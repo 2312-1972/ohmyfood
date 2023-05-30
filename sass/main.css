@@ -23,6 +23,10 @@ header .localisation {
   align-items: center;
   gap: 10px;
 }
+header .restaurants {
+  height: 63px;
+  display: flex;
+}
 
 footer {
   background-color: #353535;
@@ -109,6 +113,24 @@ footer .foot .iconefooter {
   background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.sectionrestau {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+
+.images {
+  border-radius: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.header {
+  display: flex;
+  height: 63px;
 }
 
 .h1 {

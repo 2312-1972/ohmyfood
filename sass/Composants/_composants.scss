@@ -78,6 +78,10 @@
   }
   }
   
-  
-  
-  
+  .sectionrestau {
+    display: flex;
+    flex-direction: column;background-color: #f7f7f7
+    ;}
+    .images{border-radius: 0;object-fit: cover;z-index: 0;}
+  .header{display: flex;height: 63px;}
+
