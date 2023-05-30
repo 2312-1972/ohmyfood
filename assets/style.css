@@ -236,7 +236,7 @@ h5 {
     #ff79da 123.93%
   );
   background-clip: text;
-  -webkit-background-clip: text;line-height: ;
+  -webkit-background-clip: text;line-height:1 ;
   
   
 }
