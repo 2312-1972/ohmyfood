@@ -215,31 +215,22 @@ h5 {
   color: black;position: absolute;
   
 }
+.heart-empty{line-height: 1;}
 
-.heart-empty {
-  z-index: 0;line-height: 1;
-}
 .heart-full {
   opacity: 0;
   color: transparent;
   transition-property: transform;
-  transition: ease-in-out 1000ms;
-  z-index: 1;line-height: 1;
+  transition: all ease-in-out 1000ms;
   
 }
-
 .heart-full:hover {
   opacity: 1;
-  background-image: linear-gradient(
-    193.33deg,
-    #9356dc -11.44%,
-    #ff79da 123.93%
-  );
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
-  -webkit-background-clip: text;line-height:1 ;
-  
-  
+  -webkit-background-clip: text;line-height: 1;z-index: 1;
 }
+
 
 /**homepage section*/
 .section1 {
@@ -359,7 +350,7 @@ footer .foot .iconefooter {
     align-items: center;
   }
 
-  .explorer2{width: 60%;}
+  .explorer2{width: 80%;}
   .fulls{padding-right: 530px;}
  
 }
@@ -417,7 +408,7 @@ footer .foot .iconefooter {
   .explorer2 {
     display: flex;
     flex-direction: row;
-    padding-right: 65px;
+    padding-left:60px ;
   }
 
   .blockcard {

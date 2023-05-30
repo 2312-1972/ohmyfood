@@ -58,5 +58,26 @@
     margin: 30px;
     padding-bottom: 35px;
   }
+  .heart-full {
+    opacity: 0;
+    color: transparent;
+    transition-property: transform;
+    transition: ease-in-out 1000ms;
+    z-index: 1;
+    &:hover {
+    opacity: 1;
+    background-image: linear-gradient(
+      193.33deg,
+      #9356dc -11.44%,
+      #ff79da 123.93%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    
+  }
+  }
+  
+  
   
   
