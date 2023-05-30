@@ -221,7 +221,7 @@ h5 {
   opacity: 0;
   color: transparent;
   transition-property: transform;
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 1000ms;line-height: 1;
   
 }
 .heart-full:hover {
