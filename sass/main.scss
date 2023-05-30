@@ -1,25 +1,10 @@
 @import "./utils/variables";
-@import"./Layout/layout";
-@import"./Composants/composants";
+@import "./Layout/layout";
+@import "./Composants/composants";
+@import "./Base/Base";
 body {
   min-width: 320px;
   background-color: #f7f7f7;
-}
-
-
-
-.h1 {
-  font-family: $font2;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.h1_style1 {
-  text-align: start;
-  padding-left: 10px;
-  padding-top: 40px;
 }
 
 p {
@@ -75,8 +60,6 @@ h4 {
   justify-content: center;
 }
 
-
-
 .section2 {
   background-color: #ffffff;
   height: 441px;
@@ -89,7 +72,6 @@ h4 {
   align-items: center;
   margin-top: 30px;
 }
-
 
 /*icone*/
 .fa-location-dot {
@@ -159,15 +141,21 @@ img {
   padding-left: 15px;
 }
 
-.heart {
-  margin: 30px;
-  padding-bottom: 35px;
-}
-
 .Shrik1 {
   font-family: $font1;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
+}
+
+/* Medium devices (tablets, less/equal than 1440px) */
+@media screen and (max-width: 1439px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .explorer2 {
+    flex-direction: row;
+  }
 }

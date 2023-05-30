@@ -50,12 +50,18 @@ footer .foot .iconefooter {
   width: 218px;
   height: 50px;
   text-align: center;
+  position: relative;
   transition-property: transform;
   transition: all 400ms;
 }
 .buton:hover {
   transform: scale(1.15);
-  background-color: #7e7e7e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  opacity: 70%;
+}
+.buton a {
+  text-decoration: none;
 }
 
 .btn {
@@ -74,11 +80,12 @@ footer .foot .iconefooter {
 }
 .btn:hover {
   transform: scale(1.15);
+  opacity: 70%;
 }
 
-body {
-  min-width: 320px;
-  background-color: #f7f7f7;
+.heart {
+  margin: 30px;
+  padding-bottom: 35px;
 }
 
 .h1 {
@@ -93,6 +100,40 @@ body {
   text-align: start;
   padding-left: 10px;
   padding-top: 40px;
+}
+
+.h2 {
+  font-family: "roboto";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.h2 .h2_gris {
+  color: #353535;
+}
+.h2 .h2_blc {
+  color: #ffffff;
+}
+.h2 .h2_blc--400 {
+  font-weight: 400;
+}
+.h2 .h2_black {
+  color: black;
+}
+
+h5 {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 16px;
+  color: #008766;
+}
+
+body {
+  min-width: 320px;
+  background-color: #f7f7f7;
 }
 
 p {
@@ -230,15 +271,21 @@ img {
   padding-left: 15px;
 }
 
-.heart {
-  margin: 30px;
-  padding-bottom: 35px;
-}
-
 .Shrik1 {
   font-family: "shrickhand";
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
+}
+
+/* Medium devices (tablets, less/equal than 1440px) */
+@media screen and (max-width: 1439px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .explorer2 {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */

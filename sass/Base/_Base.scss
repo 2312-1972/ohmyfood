@@ -1,0 +1,49 @@
+.h1 {
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center; 
+    
+  }
+  
+ .h1_style1 {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 40px;
+  }
+  .h2 {
+    font-family: "roboto";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px; 
+ .h2_gris {
+    color: #353535;
+  }
+  
+  .h2_blc {
+    color: #ffffff;
+  }
+  .h2_blc--400 {
+    font-weight: 400;
+  }
+  
+  .h2_black {
+    color: black;
+  }
+  }
+  h5 {
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 16px;
+    color: $newscolor;
+    
+  }
+  
+ 
+  
+  
+  
