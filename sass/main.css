@@ -82,6 +82,15 @@ footer .foot .iconefooter {
   transform: scale(1.15);
   opacity: 70%;
 }
+.btn:hover .fa-mobile-screen-button {
+  color: #9356dc;
+}
+.btn:hover .fa-list {
+  color: #9356dc;
+}
+.btn:hover .fa-store {
+  color: #9356dc;
+}
 
 .heart {
   margin: 30px;

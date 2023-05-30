@@ -41,6 +41,17 @@
     transition: all 400ms;
     &:hover {
       transform: scale(1.15);opacity: 70%;
+      .fa-mobile-screen-button {
+        color: #9356dc;
+      }
+      
+      .fa-list {
+        color: #9356dc;
+      }
+      
+      .fa-store {
+        color:#9356dc ;
+      }
     }
   }
   .heart {
