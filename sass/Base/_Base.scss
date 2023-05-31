@@ -12,6 +12,7 @@
     padding-left: 10px;
     padding-top: 40px;
   }
+  
   .h2 {
     font-family: "roboto";
     font-style: normal;
@@ -43,8 +44,15 @@
     
   }
 
-  
-  
+  .titlerecipe{font-family: $font2;
+    font-size: 18px;
+     line-height: 21px;
+     font-weight: 500;text-align: start;}
+   .subtitlerecipe{font-size: $font2;
+    font-size: 15px;
+  font-weight: 300;
+   line-height: 18px;
+  .€{font-weight: 700;}}  
  
   
   

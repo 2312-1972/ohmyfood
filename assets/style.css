@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 113px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 header .bloclogo {
@@ -74,6 +74,7 @@ p {
   font-weight: 500;
   line-height: 19px;
 }
+
 .h2_gris {
   color: #353535;
 }
@@ -211,27 +212,35 @@ h5 {
   color: #9356dc;
 }
 .fa-store {
-  color:#7e7e7e ;
+  color: #7e7e7e;
 }
 .fa-heart {
-  color: black;position: absolute;
-  
+  color: black;
+  position: absolute;
 }
-.heart-empty{z-index: 0;line-height: 1;}
+.heart-empty {
+  z-index: 0;
+  line-height: 1;
+}
 
 .heart-full {
   opacity: 0;
   color: transparent;
   transition-property: transform;
-  transition: all ease-in-out 1000ms;line-height: 1;
-  
+  transition: all ease-in-out 1000ms;
+  line-height: 1;
 }
 .heart-full:hover {
   opacity: 1;
-background-image:linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
   background-clip: text;
-  -webkit-background-clip: text;}
-
+  -webkit-background-clip: text;
+  line-height: 1;
+}
 
 /**homepage section*/
 .section1 {
@@ -294,6 +303,7 @@ img {
   padding-bottom: 50px;
   padding-right: 20px;
 }
+
 .homecard {
   padding-bottom: 20px;
 }
@@ -336,25 +346,124 @@ footer .foot .iconefooter {
 }
 
 /**pages restaurants*/
-
+.header {
+  display: flex;
+  height: 63px;
+}
 .sectionrestau {
   display: flex;
-  flex-direction: column;background-color: #7e7e7e
-  ;}
-  .images{border-radius: 0;object-fit: cover;z-index: 0;}
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
 
-  .header {
-    display: flex;
-    height: 63px;
-  }
+  box-sizing: border-box;
+  z-index: 1;
+  position: absolute;
+  margin-top: -25px;
+}
+.sectionrestau .block-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  width: 341px;
+  height: 27px;
+  left: 17px;
+}
+.sectionrestau.block-title.titlerestau {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  font-family: "shrikhand";
+}
+.images {
+  border-radius: 0;
+  object-fit: cover;
+  z-index: 0;
+  position: relative;
+}
+.sectionrestau .block-title .heartrestau {
+  padding-left: 300px;
+  padding-top: 38px;
+}
 
+.blockrestau {
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 15px;
+  padding-top: 30px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.subtitle-restau {
+  font-family: "roboto";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+.btnrestau {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 92%;
+  height: 69px;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  text-align: center;
+  transition-property: transform;
+  transition: all 400ms;
+}
+.h1recipe {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  padding-left: 10px;
+  margin: 0;
+}
+.sub€ {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 92%;
+}
+.subtitlerecipe {
+  display: flex;
+  height: 16px;
+  font-size: "roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.subtitles {
+  display: flex;
+  width: 100%;
+  height: 16px;
+  margin-bottom: 40px;
+}
+.€ {
+  font-weight: 700;
+  display: flex;
+  height: 16px;
+  font-size: "roboto";
+  font-size: 15px;
+  line-height: 18px;
+}
 /* Medium devices (tablets, less/equal than 1024px) */
-@media screen and (min-width: 1023px){
-  body{width: 100%;}
+@media screen and (min-width: 1023px) {
+  body {
+    width: 100%;
+  }
   .section1 {
     display: flex;
-    
-    
   }
 
   .section2 {
@@ -365,9 +474,12 @@ footer .foot .iconefooter {
     align-items: center;
   }
 
-  .explorer2{width: 80%;}
-  .fulls{padding-right: 530px;}
- 
+  .explorer2 {
+    width: 80%;
+  }
+  .fulls {
+    padding-right: 530px;
+  }
 }
 /* Medium devices (tablets, less/equal than 1440px) */
 @media screen and (min-width: 1439px) {
@@ -423,7 +535,7 @@ footer .foot .iconefooter {
   .explorer2 {
     display: flex;
     flex-direction: row;
-    padding-left:60px ;
+    padding-left: 60px;
   }
 
   .blockcard {
