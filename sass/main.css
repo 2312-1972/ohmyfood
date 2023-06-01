@@ -29,6 +29,12 @@ header .restaurants {
   display: flex;
 }
 
+.border {
+  border-bottom: #99e2d0 3px solid;
+  padding-bottom: 10px;
+  width: 40px;
+}
+
 footer {
   background-color: #353535;
   margin-top: 40px;
@@ -95,6 +101,13 @@ footer .foot .iconefooter {
 }
 .btn:hover .fa-store {
   color: #9356dc;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #000000;
 }
 
 .heart {
@@ -179,6 +192,10 @@ footer .foot .iconefooter {
   color: #9356dc;
 }
 
+.explorer3 {
+  margin-top: 30px;
+}
+
 .h1 {
   font-family: "roboto";
   font-weight: 700;
@@ -243,6 +260,11 @@ h5 {
 body {
   min-width: 320px;
   background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 p {

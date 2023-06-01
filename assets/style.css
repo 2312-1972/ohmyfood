@@ -112,6 +112,10 @@ h5 {
   line-height: 16px;
   color: #008766;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .explorer {
   display: flex;
   justify-content: center;
@@ -350,6 +354,12 @@ footer .foot .iconefooter {
   display: flex;
   height: 63px;
 }
+.fa-arrow-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #000000;
+}
 .sectionrestau {
   display: flex;
   flex-direction: column;
@@ -457,6 +467,15 @@ footer .foot .iconefooter {
   font-size: 15px;
   line-height: 18px;
 }
+.explorer3 {
+  margin-top: 30px;
+}
+.border {
+  border-bottom: #99e2d0 3px solid;
+  padding-bottom: 10px;
+  width: 40px;
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (min-width: 1023px) {
   body {
