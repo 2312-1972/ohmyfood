@@ -362,11 +362,10 @@ footer .foot .iconefooter {
 }
 .sectionrestau {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;box-sizing: border-box;
   background-color: #f7f7f7;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  width: 100%;
 
   box-sizing: border-box;
   z-index: 1;
@@ -399,14 +398,14 @@ footer .foot .iconefooter {
   padding-top: 38px;
 }
 
-.blockrestau {
-  width: 100%;
-  align-items: flex-start;
-  margin-left: 15px;
-  padding-top: 30px;
-  gap: 20px;
+.restau {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: flex-start;width: 100%;padding-left: 5px;
+
 }
 .subtitle-restau {
   font-family: "roboto";
@@ -416,12 +415,12 @@ footer .foot .iconefooter {
   line-height: 19px;
 }
 .btnrestau {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  width: 92%;
+  width: 98%;
   height: 69px;
   background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -500,6 +499,17 @@ footer .foot .iconefooter {
     padding-right: 530px;
   }
 }
+/*restaurants*/
+.sectionrestau {
+  width: 100%;
+  align-items: center;
+}
+.restau {
+  width: 100%;
+  padding-left: 15px;
+}
+.sectionrestau .block-title .heartrestau{padding-left: 90%;}
+footer{width: 100%;}
 /* Medium devices (tablets, less/equal than 1440px) */
 @media screen and (min-width: 1439px) {
   body {
@@ -597,3 +607,4 @@ footer .foot .iconefooter {
     gap: 30px;
   }
 }
+/*pages restau*/
