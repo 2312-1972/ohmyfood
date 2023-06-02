@@ -350,6 +350,7 @@ footer .foot .iconefooter {
 }
 
 /**pages restaurants*/
+
 .header {
   display: flex;
   height: 63px;
@@ -360,27 +361,28 @@ footer .foot .iconefooter {
   left: 30px;
   color: #000000;
 }
-.sectionrestau {
+
+.srestau {
   display: flex;
   flex-direction: column;box-sizing: border-box;
   background-color: #f7f7f7;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-
+width: 100%;
   box-sizing: border-box;
   z-index: 1;
   position: absolute;
   margin-top: -25px;
 }
-.sectionrestau .block-title {
+.srestau .block-title {
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
-  width: 341px;
-  height: 27px;
-  left: 17px;
+  width: 100%;
+  padding-left: 5px;
+  
 }
-.sectionrestau.block-title.titlerestau {
+.srestau.block-title.titlerestau {
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
@@ -393,7 +395,7 @@ footer .foot .iconefooter {
   z-index: 0;
   position: relative;
 }
-.sectionrestau .block-title .heartrestau {
+.srestau .block-title .heartrestau {
   padding-left: 300px;
   padding-top: 38px;
 }
@@ -403,7 +405,7 @@ footer .foot .iconefooter {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 60px;
   align-items: flex-start;width: 100%;padding-left: 5px;
 
 }
