@@ -489,12 +489,13 @@ footer .foot .iconefooter {
     display: flex;
     flex-direction: column;
     height: 100%;
-    align-items: center;
+    align-items:flex-start;
   }
 
-  .explorer2 {
+  .explorer2 {align-items: center;margin-left: 100px;
     width: 80%;
   }
+  .explorer{margin-bottom: 20px;}
   .fulls {
     padding-right: 530px;
   }
@@ -536,7 +537,7 @@ footer{width: 100%;}
     align-items: center;
   }
 
-  .section2 {
+  .section2 {width: 100%;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -561,11 +562,12 @@ footer{width: 100%;}
   .explorer {
     padding-bottom: 30px;
   }
-  .explorer2 {
-    display: flex;
+  .explorer2 {margin: 0;
+    display: flex;width: 88%;padding-right: 70px;
     flex-direction: row;
-    padding-left: 60px;
+    justify-content: center;
   }
+  .btn{width: 322px;}
 
   .blockcard {
     display: flex;
