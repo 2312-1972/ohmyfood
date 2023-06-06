@@ -257,7 +257,7 @@ a {
 
 /**cards*/
 .new {
-  display: flex;
+  display:flex;
   position: absolute;
   width: 80px;
   height: 29px;
@@ -323,7 +323,7 @@ footer {width: 100%;
   box-sizing: border-box;
   background-color: #353535;
   box-sizing: border-box;
-  margin-top: 40px;position:relative;top: 1160px;
+  margin-top: 40px;
 }
 footer .feet {
   display: flex;
@@ -569,7 +569,7 @@ span{display: inline-block;}
     padding-top: 30px;
   }
   footer {
-    width: 100%;top: 1340px;
+    width: 100%;
   }
   footer .feet {
     height: 114px;
@@ -703,6 +703,6 @@ span{display: inline-block;}
 .heartrestau{padding-right: 200px;}
   footer {
     width: 100%;
-    margin-top: 0; top: 1350px;
+    margin-top: 0; 
   }
 }
