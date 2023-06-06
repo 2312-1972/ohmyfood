@@ -223,7 +223,7 @@ a {
   
 }
 .heart-empty {
-  z-index: 0;
+  
   line-height: 1;
 }
 
@@ -258,14 +258,15 @@ a {
 /**cards*/
 .new {
   display:flex;
-  position: absolute;
+  position: absolute;box-sizing: border-box;
   width: 80px;
   height: 29px;
   background: #99e2d0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
-  margin-left: 67%;
-  margin-top: 15px;
+  margin-left: 250px;
+  margin-top: 15px;justify-content: center;
+  align-items: center;
 }
 .blockcard {
   display: flex;
@@ -311,12 +312,7 @@ img {
 .homecard {
   padding-bottom: 20px;
 }
-.new {
-  width: 80px;
-  height: 29px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /**footer**/
 footer {width: 100%;
@@ -548,7 +544,7 @@ span{display: inline-block;}
   .fulls {
     padding-right: 530px;
   }
-
+.new{margin-left: 75%;}
   /*restaurants*/
   .srestau {
     width: 80%;
@@ -618,7 +614,7 @@ span{display: inline-block;}
     flex-direction: column;
     align-items: center;margin-bottom: 30px;
   }
-
+.new{margin-left: 390px;}
   .section2 {
     width: 100%;
     padding-bottom: 30px;
@@ -679,9 +675,7 @@ span{display: inline-block;}
     width: 490px;
     object-fit: cover;
   }
-  .new {
-    margin-left: 25%;
-  }
+ 
 
   /*pages restau*/
   .images {
