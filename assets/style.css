@@ -219,8 +219,8 @@ a {
   color: #7e7e7e;
 }
 .fa-heart {
-  color: black;
-  position: absolute;
+  color: black;position: absolute;
+  
 }
 .heart-empty {
   z-index: 0;
@@ -241,7 +241,7 @@ a {
     #9356dc -11.44%,
     #ff79da 123.93%
   );
-  background-clip: text;
+  background-clip:text;
   -webkit-background-clip: text;
   line-height: 1;
 }
@@ -319,11 +319,11 @@ img {
 }
 
 /**footer**/
-footer {
+footer {width: 100%;
   box-sizing: border-box;
   background-color: #353535;
   box-sizing: border-box;
-  margin-top: 40px;
+  margin-top: 40px;position:relative;top: 1160px;
 }
 footer .feet {
   display: flex;
@@ -361,6 +361,7 @@ footer .foot .iconefooter {
   left: 30px;
   color: #000000;
 }
+
 
 .srestau {
   display: flex;
@@ -429,11 +430,14 @@ footer .foot .iconefooter {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   text-align: center;
-  overflow: hidden;
+  
+ 
+}
+.btnrestau:hover {  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.30);
  
 }
 
-.check {
+ .check {
   width: 59px;
   height: 69px;
   position: absolute;
@@ -445,7 +449,7 @@ footer .foot .iconefooter {
   transition: all 600ms;
   transform: translate(-69px);
 }
-.check:hover {
+ .check:hover {
   opacity: 1;
 }
 span{display: inline-block;}
@@ -565,7 +569,7 @@ span{display: inline-block;}
     padding-top: 30px;
   }
   footer {
-    width: 100%;
+    width: 100%;top: 1340px;
   }
   footer .feet {
     height: 114px;
@@ -699,6 +703,6 @@ span{display: inline-block;}
 .heartrestau{padding-right: 200px;}
   footer {
     width: 100%;
-    margin-top: 0;
+    margin-top: 0; top: 1350px;
   }
 }
