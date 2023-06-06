@@ -528,13 +528,13 @@ span{display: inline-block;}
     display: flex;
     flex-direction: column;
     height: 100%;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .explorer2 {
     align-items: center;
     margin-left: 100px;
-    width: 80%;
+    width: 60%;
   }
   .explorer {
     margin-bottom: 20px;
@@ -602,6 +602,7 @@ span{display: inline-block;}
   .Num {
     width: 320px;
   }
+  .N{width: 9%;}
   .btn {
     width: 270px;
   }
