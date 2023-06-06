@@ -219,20 +219,21 @@ a {
   color: #7e7e7e;
 }
 .fa-heart {
-  color: black;position: absolute;
-  
+  color: black;
+  position: absolute;
 }
 .heart-empty {
-  
+  /*border: 2px black solid;*/
   line-height: 1;
 }
 
 .heart-full {
   opacity: 0;
-  color: transparent;
+  color: transparent; /* Mewena nous ne pouvions pas vopir le coeur car il a une couleur transparente*/
   transition-property: transform;
   transition: all ease-in-out 1000ms;
   line-height: 1;
+  /* border: #ff79da 2px solid;*/
 }
 .heart-full:hover {
   opacity: 1;
@@ -241,7 +242,7 @@ a {
     #9356dc -11.44%,
     #ff79da 123.93%
   );
-  background-clip:text;
+  background-clip: text;
   -webkit-background-clip: text;
   line-height: 1;
 }
@@ -257,15 +258,17 @@ a {
 
 /**cards*/
 .new {
-  display:flex;
-  position: absolute;box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
   width: 80px;
   height: 29px;
   background: #99e2d0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   margin-left: 250px;
-  margin-top: 15px;justify-content: center;
+  margin-top: 15px;
+  justify-content: center;
   align-items: center;
 }
 .blockcard {
@@ -313,9 +316,9 @@ img {
   padding-bottom: 20px;
 }
 
-
 /**footer**/
-footer {width: 100%;
+footer {
+  width: 100%;
   box-sizing: border-box;
   background-color: #353535;
   box-sizing: border-box;
@@ -358,7 +361,6 @@ footer .foot .iconefooter {
   color: #000000;
 }
 
-
 .srestau {
   display: flex;
   flex-direction: column;
@@ -395,6 +397,7 @@ footer .foot .iconefooter {
 .srestau .block-title .heartrestau {
   padding-left: 300px;
   padding-top: 38px;
+  /* position: relative;*/
 }
 
 .restau {
@@ -426,14 +429,12 @@ footer .foot .iconefooter {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   text-align: center;
-  
- 
 }
-.btnrestau:hover {  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.30);
- 
+.btnrestau:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
- .check {
+.check {
   width: 59px;
   height: 69px;
   position: absolute;
@@ -445,10 +446,13 @@ footer .foot .iconefooter {
   transition: all 600ms;
   transform: translate(-69px);
 }
- .check:hover {
+.check:hover {
   opacity: 1;
 }
-span{display: inline-block;}
+
+span {
+  display: inline-block;
+}
 .h1recipe {
   font-family: "roboto";
   font-size: 18px;
@@ -462,7 +466,7 @@ span{display: inline-block;}
   justify-content: space-between;
   padding-bottom: 10px;
   padding-left: 10px;
-  width: 92%; 
+  width: 92%;
 }
 .subtitlerecipe {
   display: flex;
@@ -508,7 +512,12 @@ span{display: inline-block;}
   color: #99e2d0;
 }
 
-.footerrestau{margin-top: 1200px;}
+.footerrestau {
+  margin-top: 1200px;
+}
+.footrestau {
+  margin-top: 1300px;
+}
 /* Medium devices (tablets, less/equal than 768px) */
 @media screen and (min-width: 767.8px) {
   body {
@@ -534,7 +543,6 @@ span{display: inline-block;}
   }
 
   .explorer2 {
-   
     margin-left: 100px;
     width: 60%;
   }
@@ -544,7 +552,9 @@ span{display: inline-block;}
   .fulls {
     padding-right: 530px;
   }
-.new{margin-left: 75%;}
+  .new {
+    margin-left: 75%;
+  }
   /*restaurants*/
   .srestau {
     width: 80%;
@@ -554,7 +564,8 @@ span{display: inline-block;}
   }
 
   .titlerestau {
-    margin-top: 10px;padding-right: 80px;
+    margin-top: 10px;
+    padding-right: 80px;
   }
   .heartrestau {
     margin-top: 10px;
@@ -564,12 +575,18 @@ span{display: inline-block;}
     padding-top: 40px;
   }
   .explorer3 {
-    padding-top: 30px;padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   footer {
     width: 100%;
   }
-  .footerrestau{margin-top: 1350px;}
+  .footerrestau {
+    margin-top: 1350px;
+  }
+  .footrestau {
+    margin-top: 1440px;
+  }
   footer .feet {
     height: 114px;
     display: flex;
@@ -605,16 +622,21 @@ span{display: inline-block;}
   .Num {
     width: 320px;
   }
-  .N{width: 9%;}
+  .N {
+    width: 9%;
+  }
   .btn {
     width: 270px;
   }
   .section1 {
     display: flex;
     flex-direction: column;
-    align-items: center;margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 30px;
   }
-.new{margin-left: 390px;}
+  .new {
+    margin-left: 390px;
+  }
   .section2 {
     width: 100%;
     padding-bottom: 30px;
@@ -675,7 +697,6 @@ span{display: inline-block;}
     width: 490px;
     object-fit: cover;
   }
- 
 
   /*pages restau*/
   .images {
@@ -685,7 +706,6 @@ span{display: inline-block;}
     height: 440px;
   }
 
-   
   .srestau {
     width: 70%;
 
@@ -696,11 +716,20 @@ span{display: inline-block;}
     padding-top: 30px;
     width: 50%;
   }
-.titlerestau{padding-right: 240px;}
-.heartrestau{padding-right: 200px;}
+  .titlerestau {
+    padding-right: 240px;
+  }
+  .heartrestau {
+    padding-right: 200px;
+  }
   footer {
     width: 100%;
-    margin-top: 0; 
+    margin-top: 0;
   }
-  .footerrestau{margin-top: 1330px;}
+  .footerrestau {
+    margin-top: 1330px;
+  }
+  .footrestau {
+    margin-top: 1420px;
+  }
 }
