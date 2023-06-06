@@ -446,7 +446,7 @@ footer .foot .iconefooter {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   opacity: 0;
-  transition: all ease-in-out both 600ms;
+  transition: all ease-in-out 600ms;
   transform: translate(-69px);
 }
 .check:hover {
@@ -563,7 +563,7 @@ span {
     width: 80%;
     margin-left: 100px;
     align-items: center;
-    padding-top: -50px;
+    padding-top: 30px;
   }
 
   .titlerestau {
