@@ -1,3 +1,7 @@
+/*loader*/
+
+
+
 /**general*/
 .primary-color {
   color: #9356dc;
@@ -805,4 +809,62 @@ span {
   .footrestau {
     margin-top: 1498px;
   }
+
+  .sectionl {
+    margin: 0;
+    padding: 0;
+    font-family: shrikhand;
+    font-size: 60px;
+    color: #9356dc;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45); ;
+    text-align: center;
+    background-color: rgb(247, 240, 231, 0.2);
+  }
+  .load {
+    height: 600px;
+    width: 100%;
+    line-height: 600px;
+  }
+  .loader {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+  }
+  .loader-rotate {
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    border: 6px solid rgb(106, 90, 205, 0.8);
+    border-top: #9356dc;
+    border-bottom: #9356dc;
+    position: relative;
+  }
+  
+  .loader-rotate:after {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border: 6px solid transparent;
+    border-top: 6px solid #99e2d0;
+    border-bottom: 6px solid #99e2d0;
+    animation: rotate 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  /*@ keyframes*/
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 }
