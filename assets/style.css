@@ -218,6 +218,11 @@ a {
 .fa-store {
   color: #7e7e7e;
 }
+.srestau .block-title .heartrestau {
+  padding-left: 300px;
+  padding-top: 38px;
+  position: relative;
+}
 .fa-heart {
   color: black;
   position: absolute; 
@@ -231,7 +236,7 @@ a {
 .heart-full {
  /* opacity: 0; Opacity ne sert pas vu qu'il y a un color:transparent qui suit*/
   color: transparent; /* Mewena nous ne pouvions pas voir le coeur car il a une couleur transparente*/
-  transition: transform 1000ms;
+  transition: all  ease-in-out 1000ms ;
   line-height: 1;
   
 }
@@ -241,7 +246,7 @@ a {
     193.33deg,
     #9356dc -11.44%,
     #ff79da 123.93%);
-  /*background-clip: text; ne sert pas sur ce cas -webkit-background-clip prend le relai pour la couleur de fond */
+  background-clip: text;
   -webkit-background-clip: text;
   line-height: 1;
   transform:scale(1.15)
@@ -310,6 +315,7 @@ img {
   margin: 20px;
   padding-bottom: 50px;
   padding-right: 20px;
+  position: relative;
 }
 
 .homecard {
@@ -395,11 +401,7 @@ footer .foot .iconefooter {
   
 }
 
-.srestau .block-title .heartrestau {
-  padding-left: 300px;
-  padding-top: 38px;
-  position: relative;
-}
+
 
 .restau {
   box-sizing: border-box;
@@ -411,6 +413,8 @@ footer .foot .iconefooter {
   width: 100%;
   padding-left: 5px;
 }
+
+
 .subtitle-restau {
   font-family: "roboto";
   font-style: normal;
