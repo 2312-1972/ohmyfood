@@ -1,0 +1,47 @@
+.namePlat {
+    flex-grow: 1;
+    width: 10em;
+    background: #def;
+   
+    p,
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .price {
+    width: 8em;
+    background: #fde;
+  }
+  .box {
+    display: flex;
+    width: 0;
+    transition: all 1s;
+   
+    .check {
+      margin: auto;
+      border: 4px solid currentColor;
+      border-radius: 50%;
+      color: #690;
+      background-color: #efd;
+      transition: transform 1s;
+      transform: rotate(180deg);
+    }
+  }
+   
+  .menus {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    overflow: hidden;
+    cursor: pointer;
+   
+    &:hover > .box {
+      width: 5em;
+      .check {
+        transform: rotate(0deg);
+      }
+    }
+  }

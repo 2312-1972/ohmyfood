@@ -184,8 +184,9 @@ footer .foot .iconefooter {
   text-align: center;
   position: relative;
 }
-.btnrestau:hover + .check {
-  transform: translateX(-69px);
+.btnrestau:hover >.check {
+  transform: scale(1.15);
+  opacity: 1;
 }
 
 .check {
@@ -199,9 +200,6 @@ footer .foot .iconefooter {
   border-bottom-right-radius: 20px;
   opacity: 0;
   transition: all 600ms;
-}
-.check:hover {
-  opacity: 1;
 }
 
 .explorer3 {
