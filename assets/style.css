@@ -231,8 +231,7 @@ a {
 .heart-full {
  /* opacity: 0; Opacity ne sert pas vu qu'il y a un color:transparent qui suit*/
   color: transparent; /* Mewena nous ne pouvions pas voir le coeur car il a une couleur transparente*/
-  transition-property: transform;
-  transition: all ease-in-out  600ms;
+  transition: transform 1000ms;
   line-height: 1;
   
 }
@@ -245,6 +244,7 @@ a {
   /*background-clip: text; ne sert pas sur ce cas -webkit-background-clip prend le relai pour la couleur de fond */
   -webkit-background-clip: text;
   line-height: 1;
+  transform:scale(1.15)
 }
 
 /**homepage section*/
