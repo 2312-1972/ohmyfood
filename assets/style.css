@@ -309,10 +309,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 15px; 
 }
 .heart {
-  margin: 20px;
+  margin: 20px;text-align: center;
   padding-bottom: 50px;
   padding-right: 20px;
   position: relative;
@@ -412,6 +412,27 @@ footer .foot .iconefooter {
   align-items: flex-start;
   width: 100%;
   padding-left: 5px;
+  animation: entree 2s;
+}
+@keyframes entree{
+  0%{transform: scale(0);
+  opacity: 0;}
+  85%,100%{ opacity: 1; }
+  100%{transform: scale(1);}
+ }
+.restaup{animation: plats 2s 400ms;}
+ @keyframes plats{ 0%{transform: scale(0);
+  opacity: 0;}
+  85%,100%{ opacity: 1; }
+  100%{transform: scale(1);}}
+
+.restaud{animation: dessert 2s 800ms}
+@keyframes dessert{0%{transform: scale(0);
+  opacity: 0;}
+  85%,100%{ opacity: 1; }
+  100%{transform: scale(1);}
+
+
 }
 
 
@@ -435,6 +456,7 @@ footer .foot .iconefooter {
   border-radius: 20px;
   text-align: center;
   position: relative;
+  text-overflow: ellipsis;
 
 
 }
@@ -466,14 +488,14 @@ span {
   font-weight: 600;
   line-height: 21px;
   padding-left: 10px;
-  margin: 0;
+  margin: 0;text-overflow: ellipsis;
 }
 .sub€ {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
   padding-left: 10px;
-  width: 92%;
+  width: 92%;text-overflow: ellipsis;
 }
 .subtitlerecipe {
   display: flex;
