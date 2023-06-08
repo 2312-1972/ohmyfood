@@ -53,7 +53,6 @@ a {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  
 }
 .h1_style1 {
   text-align: left;
@@ -66,7 +65,6 @@ p {
   font-size: 18px;
   text-align: center;
   color: #353535;
-  
 }
 
 .h2 {
@@ -95,7 +93,7 @@ h3 {
   font-weight: 700;
   line-height: 21px;
   margin: 0;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -228,14 +226,33 @@ a {
   padding-top: 38px;
   position: relative;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+.heart {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  height: 22px;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
 .fa-heart {
   color: black;
   position: absolute;
+  line-height: 1;
   /*border: 2px black solid;*/
 }
-.heart-empty {
+/* .heart-empty {
   line-height: 1;
-}
+} */
 
 .heart-full {
   /* opacity: 0; Opacity ne sert pas vu qu'il y a un color:transparent qui suit*/
@@ -249,12 +266,13 @@ a {
     193.33deg,
     #9356dc -11.44%,
     #ff79da 123.93%
-  );
+  );line-height: 1;
   background-clip: text;
   -webkit-background-clip: text;
   line-height: 1;
-  transform: scale(1.15);
+  transform: scale(1.15);;
 }
+
 
 /**homepage section*/
 .section1 {
@@ -307,20 +325,6 @@ img {
   height: 65%;
   width: 100%;
   object-fit: cover;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 15px;
-}
-.heart {
-  margin: 20px;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-right: 20px;
-  position: relative;
 }
 
 .homecard {
@@ -481,10 +485,12 @@ footer .foot .iconefooter {
   background: #ffffff;
   border-radius: 20px;
   text-align: center;
- 
+
   cursor: pointer;
   position: relative;
-  text-overflow: ellipsis; overflow: hidden;white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .btnrestau .check {
@@ -528,7 +534,7 @@ span {
   line-height: 21px;
   padding-left: 10px;
   margin: 0;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -539,7 +545,7 @@ span {
   padding-bottom: 10px;
   padding-left: 10px;
   width: 92%;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -550,7 +556,7 @@ span {
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -568,7 +574,8 @@ span {
   font-family: "roboto";
   font-size: 15px;
   line-height: 18px;
-  position: relative;text-overflow: ellipsis; 
+  position: relative;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -802,14 +809,15 @@ span {
     margin-top: 1498px;
   }
 
-/*loader*/
+  /*loader*/
   .sectionl {
     margin: 0;
     padding: 0;
     font-family: shrikhand;
     font-size: 60px;
+    letter-spacing: 40px;
     color: #9356dc;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45); ;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
     text-align: center;
     background-color: rgb(247, 240, 231, 0.8);
     z-index: 1;
@@ -835,7 +843,7 @@ span {
     border-bottom: #9356dc;
     position: relative;
   }
-  
+
   .loader-rotate:after {
     content: "";
     border-radius: 100px;
@@ -848,17 +856,19 @@ span {
     border-top: 6px solid #99e2d0;
     border-bottom: 6px solid #99e2d0;
     animation: rotate 2s linear infinite;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
   }
-  
+
   /*@ keyframes*/
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
+      scale: 0;
     }
+
     100% {
       transform: rotate(360deg);
+      scale: 0.9;
     }
   }
-  
 }
