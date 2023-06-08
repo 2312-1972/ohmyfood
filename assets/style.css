@@ -266,13 +266,13 @@ a {
     193.33deg,
     #9356dc -11.44%,
     #ff79da 123.93%
-  );line-height: 1;
+  );
+  line-height: 1;
   background-clip: text;
   -webkit-background-clip: text;
   line-height: 1;
-  transform: scale(1.15);;
+  transform: scale(1.15);
 }
-
 
 /**homepage section*/
 .section1 {
@@ -538,7 +538,7 @@ span {
   overflow: hidden;
   white-space: nowrap;
 }
-.sub€ {
+.btnrestau .sub€ {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -549,8 +549,9 @@ span {
   overflow: hidden;
   white-space: nowrap;
 }
-.subtitlerecipe {
-  display: flex;
+
+.subtitlerecipe {position: relative;
+  display:inline;
   height: 16px;
   font-family: "roboto";
   font-size: 15px;
@@ -558,9 +559,11 @@ span {
   line-height: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; 
+  transform: translate(0) scale(1);
+  transition: all 0.6s;
 }
-
+  .btnrestau:hover .subtitlerecipe{transform:translate(-10%) scale(0.8)}  
 .subtitles {
   display: flex;
   width: 100%;
@@ -578,6 +581,11 @@ span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transform: translate(0);
+  transition: all 0.6s;
+}
+.btnrestau:hover .€ {
+  transform: translate(-220%);
 }
 .explorer3 {
   margin-top: 30px;
