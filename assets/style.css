@@ -244,6 +244,19 @@ a {
   align-items: center;
   position: relative;
 }
+.heartr {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  height: 22px;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -52px;
+  z-index: 1;
+  right: 10px;
+}
 .fa-heart {
   color: black;
   position: absolute;
@@ -613,7 +626,7 @@ span {
     align-items: center;
     background-color: #ffffff;
   }
-
+.heartr{top:-10px;right:130px;}
   .images {
     height: 250px;
   }
@@ -654,9 +667,9 @@ span {
     margin-top: 10px;
     padding-right: 80px;
   }
-  .heartrestau {
+  /* .heartrestau {
     margin-top: 10px;
-  }
+  } */
   .restau {
     width: 70%;
     padding-top: 40px;
