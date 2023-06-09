@@ -430,7 +430,8 @@ footer .foot .iconefooter {
   gap: 20px;
   align-items: flex-start;
   width: 100%;
-  padding-left: 5px;padding-top: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
   animation: entree 2s;
 }
 @keyframes entree {
@@ -574,11 +575,13 @@ span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  transform: translate(0) scale(1);
-  transition: all 0.6s;
 }
 .btnrestau:hover .subtitlerecipe {
-  transform: translate(-7.5%) scale(0.85);
+  transition: margin-right 0.5s ease;
+  margin-right: 80px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .subtitles {
   display: flex;
@@ -594,9 +597,6 @@ span {
   font-size: 15px;
   line-height: 18px;
   position: relative;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   transform: translate(0);
   transition: all 0.6s;
 }
@@ -604,7 +604,8 @@ span {
   transform: translate(-220%);
 }
 .explorer3 {
-  margin-top: 20px;margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .border {
   border-bottom: #99e2d0 3px solid;
@@ -632,7 +633,7 @@ span {
   }
   .heartr {
     top: -10px;
-    right: 130px;
+    right: 240px;
   }
   .images {
     height: 250px;
@@ -648,7 +649,9 @@ span {
     height: 100%;
     align-items: flex-start;
   }
-.card{height: 300px;}
+  .card {
+    height: 300px;
+  }
   .explorer2 {
     margin-left: 200px;
     width: 60%;
@@ -825,10 +828,10 @@ span {
     width: 50%;
   }
   .titlerestau {
-    padding-right: 240px;
+    padding-right: 300px;
   }
   .heartrestau {
-    padding-right: 200px;
+    padding-right: 50px;
   }
   footer {
     width: 100%;
