@@ -98,8 +98,15 @@
   height: 27px;
   left: 17px;
   top: 0px;
-  .titlerestau{ font-size:28px; font-style:italic; font-weight:400; line-height:41px;font-family:$font1;}
-  .heartrestau{padding-left: 320px;padding-top: 10px;}
+  .titlerestau{ 
+    font-size:28px; 
+    font-style:italic; 
+    font-weight:400; 
+    line-height:41px;
+    font-family:$font1;}
+  .heartrestau{
+    padding-left: 320px;
+    padding-top: 10px;}
 }
 }
 
@@ -121,10 +128,11 @@
   width: 98%;
   height: 69px;
   background: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   text-align: center;
   position: relative; 
+  
   &:hover + .check{transform:scale(1.15) ;opacity: 1;}
   
 }
