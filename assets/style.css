@@ -618,7 +618,81 @@ span {
 .footrestau {
   margin-top: 1300px;
 }
+.sectionl {
+    margin: 0; position: absolute;
+    padding-top: 300px;
+    height: 3000px;
+    width: 100%;
+    line-height: 3000px;
+    font-family: shrikhand;
+    font-size: 60px;
+    letter-spacing: 40px;
+    color: #9356dc;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    background-color: rgb(247, 240, 231, 1);
+    z-index: 2;
+    opacity: 1;
+    content: "Ohmyfood ...";
+    animation: load 5s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count:3s;
+  } 
 
+  @keyframes load {
+    0% {
+      /* transform: translate(0);  */
+      z-index: 2;opacity: 1;
+    }
+   
+    100% {
+      /* transform: translate(-9999px);  */
+      opacity: 0;z-index: -3;
+    }
+  }
+  .loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+  }
+  .loader-rotate {
+    width: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    border: 6px solid rgb(106, 90, 205, 0.8);
+    border-top: #9356dc;
+    border-bottom: #9356dc;
+    position: relative;
+  }
+
+
+  .loader-rotate:after {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border: 6px solid transparent;
+    border-top: 6px solid #99e2d0;
+    border-bottom: 6px solid #99e2d0;
+    animation: rotate 2s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  /*@keyframes*/
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+  }
+}
 /* Medium devices (tablets, less/equal than 768px) */
 @media screen and (min-width: 767.8px) {
   body {
@@ -627,6 +701,81 @@ span {
     align-items: center;
     background-color: #ffffff;
   }
+  .sectionl {
+    margin: 0; position: absolute;
+    padding-top: 1400px;
+    height: 3000px;
+    width: 100%;
+    line-height: 3000px;
+    font-family: shrikhand;
+    font-size: 60px;
+    letter-spacing: 40px;
+    color: #9356dc;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    background-color: rgb(247, 240, 231, 1);
+    z-index: 2;
+    opacity: 1;
+    content: "Ohmyfood ...";
+    animation: load 5s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count:3s;
+  } 
+
+  @keyframes load {
+    0% {
+      /* transform: translate(0);  */
+      z-index: 2;opacity: 1;
+    }
+   
+    100% {
+      /* transform: translate(-9999px);  */
+      opacity: 0;z-index: -3;
+    }
+  }
+  .loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+  }
+  .loader-rotate {
+    width: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    border: 6px solid rgb(106, 90, 205, 0.8);
+    border-top: #9356dc;
+    border-bottom: #9356dc;
+    position: relative;
+  }
+
+
+  .loader-rotate:after {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border: 6px solid transparent;
+    border-top: 6px solid #99e2d0;
+    border-bottom: 6px solid #99e2d0;
+    animation: rotate 2s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  /*@keyframes*/
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+  }
+}
   .heartr {
     top: -10px;
     right: 240px;
@@ -848,8 +997,8 @@ span {
   }
 
   /*loader*/
-  .sectionl {
-    margin: 0;
+ .sectionl {
+    margin: 0; position: absolute;
     padding-top: 500px;
     height: 3000px;
     width: 100%;
@@ -864,20 +1013,20 @@ span {
     z-index: 2;
     opacity: 1;
     content: "Ohmyfood ...";
-    animation: load 3s linear;
+    animation: load 5s linear;
     animation-delay: 0.5s;
-    position: absolute;
-    animation-iteration-count: 1;
-  }
-  
+    animation-iteration-count:3s;
+  } 
+
   @keyframes load {
     0% {
       /* transform: translate(0);  */
-      opacity: 1;
+      z-index: 2;opacity: 1;
     }
+   
     100% {
       /* transform: translate(-9999px);  */
-      opacity: 0;
+      opacity: 0;z-index: -3;
     }
   }
 
@@ -897,6 +1046,7 @@ span {
     border-bottom: #9356dc;
     position: relative;
   }
+
 
   .loader-rotate:after {
     content: "";
@@ -921,6 +1071,6 @@ span {
 
     100% {
       transform: rotate(360deg);
-    }
   }
+}
 }
