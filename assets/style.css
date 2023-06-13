@@ -22,8 +22,6 @@ header {
   justify-content: center;
 }
 
-
-
 header .bloclogo {
   background-color: #ffffff;
   height: 63px;
@@ -342,8 +340,6 @@ img {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 /**footer**/
 footer {
@@ -677,7 +673,9 @@ span {
     margin-top: 10px;
     padding-right: 80px;
   }
-.homecard{margin-top: 20px;}
+  .homecard {
+    margin-top: 20px;
+  }
   .restau {
     width: 70%;
     padding-top: 40px;
@@ -808,7 +806,9 @@ span {
     width: 490px;
     object-fit: cover;
   }
-.homecard{margin-top: 20px;}
+  .homecard {
+    margin-top: 20px;
+  }
   /*pages restau*/
   .images {
     width: 100%;
@@ -850,7 +850,10 @@ span {
   /*loader*/
   .sectionl {
     margin: 0;
-    padding: 0;
+    padding-top: 500px;
+    height: 3000px;
+    width: 100%;
+    line-height: 3000px;
     font-family: shrikhand;
     font-size: 60px;
     letter-spacing: 40px;
@@ -859,24 +862,25 @@ span {
     text-align: center;
     background-color: rgb(247, 240, 231, 1);
     z-index: 2;
-    
-  }
-  /* .sectionl::after{content: "";animation: loader 3s ;animation-delay: 0.5s;
+    opacity: 1;
+    content: "Ohmyfood ...";
+    animation: load 3s linear;
+    animation-delay: 0.5s;
+    position: absolute;
+    animation-iteration-count: 1;
   }
   
-@keyframes loader{
-  0%{ transform:translateX(0)}
-  100%{transform: translateX(-9999)}
-
-  
-} */
-
-  .load {
-    height: 3000px;
-    width: 100%;
-    line-height: 3000px;  
+  @keyframes load {
+    0% {
+      /* transform: translate(0);  */
+      opacity: 1;
+    }
+    100% {
+      /* transform: translate(-9999px);  */
+      opacity: 0;
+    }
   }
- 
+
   .loader {
     width: 150px;
     height: 150px;
@@ -892,7 +896,6 @@ span {
     border-top: #9356dc;
     border-bottom: #9356dc;
     position: relative;
-    
   }
 
   .loader-rotate:after {
@@ -914,12 +917,10 @@ span {
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
-     
     }
 
     100% {
       transform: rotate(360deg);
     }
   }
-
 }
