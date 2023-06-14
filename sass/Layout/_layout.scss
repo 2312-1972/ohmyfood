@@ -32,10 +32,8 @@ header {
       align-items: center;
       gap: 10px;
     }
-    
   }
- 
-  footer {
+ footer {
     width: 100%;
   box-sizing: border-box;
   background-color: #353535;
@@ -64,8 +62,351 @@ header {
   }
   }
   }
+  .footerrestau{
+    margin-top: 1140px;
+  }
+  .footerrestau2 {
+    margin-top: 1220px;
+  }
+  .footrestau {
+    margin-top: 1300px;
+  }
+  .srestau {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+    margin-top: -35px;
+    .block-title {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 30px;
+      width: 100%;
+      padding-left: 5px;
+      .heartrestau{
+        padding-top: 38px;
+      }
+      .titlerestau {
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 41px;
+        font-family: $font1;
+      }
+    }
+  }
+  .restau {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 10px;
+    animation: entree 2s;
+    .border {
+      border-bottom: $tierce-color 3px solid;
+      padding-bottom: 10px;
+      width: 40px;
+    }
+  }
+  @keyframes entree {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    85%,
+    100% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .restaup {
+    animation: plats 2s 400ms;
+  }
+  @keyframes plats {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    85%,
+    100% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .restaud {
+    animation: dessert 2s 800ms;
+  }
+  @keyframes dessert {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    85%,
+    100% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .subtitle-restau {
+    font-family: $font2;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    }
+
+    /*breakpoint*/
+    
+    @media screen and (min-width: 767.8px) {
+      body {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       background-color: #ffffff;
+     }
+     .heartr {
+       top: -10px;
+       right: 240px;
+     }
+     .images {
+       height: 250px;
+     }
+     .section1 {
+       display: flex;
+     }
+   .section2 {
+       padding-bottom: 30px;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       align-items: flex-start;
+     }
+     .card {
+       height: 300px;
+     }
+     .explorer2 {
+       margin-left: 200px;
+       width: 60%;
+     }
+     .explorer {
+       padding-top: 35px;
+     }
+     .fulls {
+       padding-right: 530px;
+     }
+     .new {
+       margin-left: 75%;
+     }
+     /*restaurants*/
+     .srestau {
+       width: 80%;
+       margin-left: 100px;
+       align-items: center;
+       padding-top: 30px;
+     }
+     .srestau .block-title {
+       display: flex;
+       padding-top: 30px;
+       width: 120%;
+       }
+   .srestau .block-title .titlerestau  {
+       margin-top: 10px;
+       padding-right: 240px;width: 90%;
+     }
+     .homecard {
+       margin-top: 20px;
+     }
+     .restau {
+       width: 70%;
+       padding-top: 40px;
+     }
+     .explorer3 {
+       padding-top: 30px;
+       padding-bottom: 20px;
+     }
+     footer {
+       width: 100%;
+     }
+     .footerrestau {
+       margin-top: 1310px;
+     }
+     .footerrestau2 {
+       margin-top: 1400px;
+     }
+     .footrestau {
+       margin-top: 1520px;
+     }
+     footer .feet {
+       height: 114px;
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: flex-end;
+       gap: 70px;
+       padding-right: 50px;
+     }
+     footer .foot {
+       display: flex;
+       flex-direction: row;
+       gap: 30px;
+     }
+   }
+   /* Medium devices (tablets, less/equal than 1200px) */
+   @media screen and (min-width: 1199px) {
+     body {
+       width: 100%;
+     }
+     main {
+       width: 100%;
+     }
+     header {
+       height: 146px;
+     }
+     .fa-arrow-left {
+       margin-top: 15px;
+     }
+     header .bloclogo {
+       height: 96px;
+       padding-top: 30px;
+     }
+     .Num {
+       width: 320px;
+     }
+     .N {
+       width: 9%;
+     }
+     .btn {
+       width: 270px;
+     }
+     .section1 {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 30px;
+     }
+     .new {
+       margin-left: 390px;
+     }
+     .section2 {
+       width: 100%;
+       padding-bottom: 30px;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       align-items: center;
+     }
+     .fulls {
+       padding-left: 20px;
+       margin: 0;
+     }
+     .h1d {
+       font-family: "roboto";
+       font-weight: 700;
+       font-size: 40px;
+       line-height: 47px;
+       text-align: center;
+     }
+     .h1_style1 {
+       padding-right: 910px;
+     }
+   .explorer {
+       padding-bottom: 30px;
+     }
+     .explorer2 {
+       margin: 0;
+       display: flex;
+       width: 88%;
+       padding-right: 70px;
+       flex-direction: row;
+       justify-content: center;
+     }
+     .btn {
+       width: 322px;
+     }
+   .blockcard {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       margin: 15px;
+     }
+     .blockcard_child {
+       display: flex;
+       flex-direction: row;
+       gap: 70px;
+     }
+     .card {
+       width: 490px;
+     }
+     img {
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+       height: 65%;
+       width: 490px;
+       object-fit: cover;
+     }
+     .homecard {
+       margin-top: 20px;
+     }
+     /*pages restau*/
+     .images {
+       width: 100%;
+       object-fit: cover;
+       padding-top: 30px;
+       height: 440px;
+     }
+     .srestau {
+      margin-left: 170px;
+       }
+     .srestau .block-title {
+       width: 85%;
+       }
+       .srestau .block-title .titlerestau  {
+         width: 62%;
+        }
+   .restau {
+       padding-top: 30px;
+       width: 50%;
+     }
+     .titlerestau {
+       padding-right: 300px;
+     }
+     .heartrestau {
+       padding-right: 50px;
+     }
+     footer {
+       width: 100%;
+       height: 114px;
+    }
+     .footerrestau {
+       margin-top: 1290px;
+     }
+     .footrestau {
+       margin-top: 1498px;
+     }
+     .footerrestau2 {
+       margin-top: 1380px;
+     }
+   /*loader*/
+    .sectionl{font-size: 60px;}
+   }
+
   
-  
+ 
   
   
  

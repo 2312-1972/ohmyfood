@@ -8,7 +8,6 @@
 .tierce-color {
   color: #99e2d0;
 }
-
 body {
   min-width: 320px;
   background-color: #f7f7f7;
@@ -21,7 +20,6 @@ header {
   height: 113px;
   justify-content: center;
 }
-
 header .bloclogo {
   background-color: #ffffff;
   height: 63px;
@@ -41,12 +39,10 @@ header .localisation {
   align-items: center;
   gap: 10px;
 }
-
 a {
   text-decoration: none;
   display: flex;
 }
-
 .h1 {
   font-family: "roboto";
   font-weight: 700;
@@ -59,7 +55,6 @@ a {
   padding-top: 40px;
   padding-bottom: 20px;
 }
-
 p {
   font-family: "roboto";
   font-weight: 300;
@@ -67,7 +62,6 @@ p {
   text-align: center;
   color: #353535;
 }
-
 .h2 {
   font-family: "roboto";
   font-style: normal;
@@ -75,7 +69,6 @@ p {
   font-weight: 500;
   line-height: 19px;
 }
-
 .h2_gris {
   color: #353535;
 }
@@ -206,12 +199,6 @@ a {
 .fa-mobile-screen-button,.fa-list,.fa-store {
   color: #7e7e7e;
 }
-.srestau .block-title .heartrestau {
-  padding-left: 300px;
-  padding-top: 38px;
-  position: relative;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -265,7 +252,6 @@ a {
   line-height: 1;
   transform: scale(1.15);
 }
-
 /**homepage section*/
 .section1 {
   display: flex;
@@ -274,7 +260,6 @@ a {
   margin-right: 15px;
   box-sizing: border-box;
 }
-
 /**cards*/
 .new {
   display: flex;
@@ -318,7 +303,6 @@ img {
   width: 100%;
   object-fit: cover;
 }
-
 /**footer**/
 footer {
   width: 100%;
@@ -349,9 +333,7 @@ footer .foot .iconefooter {
   font-weight: 400;
   color: #ffffff;
 }
-
 /**pages restaurants*/
-
 .header {
   display: flex;
   height: 63px;
@@ -362,7 +344,6 @@ footer .foot .iconefooter {
   left: 30px;
   color: #000000;
 }
-
 .srestau {
   display: flex;
   flex-direction: column;
@@ -376,26 +357,28 @@ footer .foot .iconefooter {
   position: absolute;
   margin-top: -35px;
 }
-.block-title {
+.srestau .block-title {
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
   width: 100%;
   padding-left: 5px;
 }
-.titlerestau {
+.srestau .block-title .titlerestau {
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
   line-height: 41px;
   font-family: "shrikhand";
 }
+.srestau .block-title .heartrestau {
+  padding-top: 38px;
+  } 
 .images {
   border-radius: 0;
   object-fit: cover;
   z-index: 0;
 }
-
 .restau {
   box-sizing: border-box;
   display: flex;
@@ -436,7 +419,6 @@ footer .foot .iconefooter {
     transform: scale(1);
   }
 }
-
 .restaud {
   animation: dessert 2s 800ms;
 }
@@ -453,7 +435,6 @@ footer .foot .iconefooter {
     transform: scale(1);
   }
 }
-
 .subtitle-restau {
   font-family: "roboto";
   font-style: normal;
@@ -472,14 +453,13 @@ footer .foot .iconefooter {
   background: #ffffff;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-
 .btnrestau .check {
   position: absolute;
   top: 0;
@@ -496,8 +476,7 @@ footer .foot .iconefooter {
   transform: translate(-100%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
 }
-
-.valid {
+.btnrestau .check .valid {
   margin-left: 20px;
   margin-top: 25px;
   border-radius: 50%;
@@ -505,7 +484,6 @@ footer .foot .iconefooter {
   height: 20px;
   background-color: #ffffff;
 }
-
 .fa-check {
   color: #99e2d0;
 }
@@ -514,7 +492,7 @@ span {
   position: relative;
   text-overflow: ellipsis;
 }
-.h1recipe {
+.btnrestau .h1recipe {
   font-family: "roboto";
   font-size: 18px;
   font-weight: 600;
@@ -536,8 +514,7 @@ span {
   overflow: hidden;
   white-space: nowrap;
 }
-
-.subtitlerecipe {
+.btnrestau .sub€ .subtitlerecipe {
   position: relative;
   display: inline;
   height: 16px;
@@ -562,7 +539,7 @@ span {
   height: 16px;
   margin-bottom: 40px;
 }
-.€ {
+.btnrestau .sub€ .€ {
   font-weight: 700;
   display: flex;
   height: 16px;
@@ -573,20 +550,19 @@ span {
   transform: translate(0);
   transition: all 0.6s;
 }
-.btnrestau:hover .€ {
+.btnrestau:hover .€{
   transform: translate(-220%);
 }
 .explorer3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.border {
+.restau .border {
   border-bottom: #99e2d0 3px solid;
   padding-bottom: 10px;
   width: 40px;
 }
-
-.footerrestau {
+.footerrestau{
   margin-top: 1140px;
 }
 .footerrestau2 {
@@ -596,8 +572,7 @@ span {
   margin-top: 1300px;
 }
 /*section loader*/
-
- .sectionl {
+.sectionl {
     margin: 0; 
     position: absolute;
     padding-top: 500px;
@@ -615,8 +590,7 @@ span {
     animation: load 5s linear;
     animation-delay: 0.5s;
     } 
-
-  @keyframes load {
+   @keyframes load {
     0% {
      z-index: 2;opacity: 1;
     }
@@ -641,8 +615,6 @@ span {
     border-bottom: #9356dc;
     position: relative;
   }
-
-
   .loader-rotate:after {
     content: "";
     border-radius: 100px;
@@ -657,8 +629,6 @@ span {
     animation: rotate 2s linear infinite;
     animation-delay: 0.5s;
   } 
-
-  /*@keyframes*/
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -676,7 +646,6 @@ span {
     align-items: center;
     background-color: #ffffff;
   }
-  
   .heartr {
     top: -10px;
     right: 240px;
@@ -687,8 +656,7 @@ span {
   .section1 {
     display: flex;
   }
-
-  .section2 {
+ .section2 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -718,10 +686,14 @@ span {
     align-items: center;
     padding-top: 30px;
   }
-
-  .titlerestau {
+  .srestau .block-title {
+    display: flex;
+    padding-top: 30px;
+    width: 120%;
+    }
+.srestau .block-title .titlerestau  {
     margin-top: 10px;
-    padding-right: 80px;
+    padding-right: 240px;width: 90%;
   }
   .homecard {
     margin-top: 20px;
@@ -818,7 +790,6 @@ span {
   .h1_style1 {
     padding-right: 910px;
   }
-
   .explorer {
     padding-bottom: 30px;
   }
@@ -833,8 +804,7 @@ span {
   .btn {
     width: 322px;
   }
-
-  .blockcard {
+ .blockcard {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -866,14 +836,16 @@ span {
     padding-top: 30px;
     height: 440px;
   }
-
   .srestau {
-    width: 70%;
-
-    margin-left: 240px;
-  }
-
-  .restau {
+   margin-left: 170px;
+    }
+  .srestau .block-title {
+    width: 85%;
+    }
+    .srestau .block-title .titlerestau  {
+      width: 62%;
+     }
+.restau {
     padding-top: 30px;
     width: 50%;
   }
@@ -885,10 +857,8 @@ span {
   }
   footer {
     width: 100%;
-    margin-top: 180px;
-    height: 200px;
- 
-  }
+    height: 114px;
+ }
   .footerrestau {
     margin-top: 1290px;
   }
@@ -898,7 +868,6 @@ span {
   .footerrestau2 {
     margin-top: 1380px;
   }
-
-  /*loader*/
+/*loader*/
  .sectionl{font-size: 60px;}
 }
