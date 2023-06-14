@@ -330,15 +330,13 @@ footer .foot .iconefooter {
     padding-bottom: 30px;
   }
   .explorer2 {
-    margin: 0;
     display: flex;
-    width: 88%;
-    padding-right: 70px;
+    width: 78%;
     flex-direction: row;
-    justify-content: center;
+    margin-left: 0px;
   }
   .btn {
-    width: 322px;
+    width: 250px;
   }
   .blockcard {
     display: flex;
@@ -412,7 +410,7 @@ footer .foot .iconefooter {
   }
 }
 .buton {
-  background: 193.33deg, #9356dc -11.44%, #ff79da 123.93%;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   width: 218px;
@@ -425,7 +423,7 @@ footer .foot .iconefooter {
 .buton:hover {
   transform: scale(1.15);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: 193.33deg, #9356dc -11.44%, #ff79da 123.93%;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   opacity: 70%;
 }
 .buton a {

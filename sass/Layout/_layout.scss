@@ -171,7 +171,7 @@ header {
     }
 
     /*breakpoint*/
-    
+
     @media screen and (min-width: 767.8px) {
       body {
        width: 100%;
@@ -327,15 +327,13 @@ header {
        padding-bottom: 30px;
      }
      .explorer2 {
-       margin: 0;
        display: flex;
-       width: 88%;
-       padding-right: 70px;
+       width: 78%;
        flex-direction: row;
-       justify-content: center;
-     }
+       margin-left: 0px;
+       }
      .btn {
-       width: 322px;
+       width: 250px;
      }
    .blockcard {
        display: flex;
