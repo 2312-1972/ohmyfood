@@ -141,12 +141,13 @@ a {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   opacity: 70%;
 }
-.Num {
+.explorer2 .Num  {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.N {
+.explorer2 .Num .N 
+  {
   width: 24px;
   height: 24px;
   background: #9356dc;
@@ -193,33 +194,16 @@ a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
   opacity: 70%;
 }
-/*icone*/
+.btn:hover .fa-mobile-screen-button, .btn:hover .fa-list, .btn:hover .fa-store {
+  color: #9356dc;
+}
 .fa-location-dot {
   color: #353535;
 }
-.fa-utensils {
+.fa-utensils,.fa-handshake-angle {
   color: #ffffff;
 }
-.fa-handshake-angle {
-  color: #ffffff;
-}
-.fa-mobile-screen-button {
-  color: #7e7e7e;
-}
-
-.fa-list {
-  color: #7e7e7e;
-}
-.btn:hover .fa-mobile-screen-button {
-  color: #9356dc;
-}
-.btn:hover .fa-list {
-  color: #9356dc;
-}
-.btn:hover .fa-store {
-  color: #9356dc;
-}
-.fa-store {
+.fa-mobile-screen-button,.fa-list,.fa-store {
   color: #7e7e7e;
 }
 .srestau .block-title .heartrestau {
@@ -262,15 +246,9 @@ a {
   color: black;
   position: absolute;
   line-height: 1;
-  /*border: 2px black solid;*/
-}
-/* .heart-empty {
-  line-height: 1;
-} */
-
+  }
 .heart-full {
-  /* opacity: 0; Opacity ne sert pas vu qu'il y a un color:transparent qui suit*/
-  color: transparent; /* Mewena nous ne pouvions pas voir le coeur car il a une couleur transparente*/
+  color: transparent; 
   transition: all ease-in-out 1000ms;
   line-height: 1;
 }
@@ -346,7 +324,6 @@ footer {
   width: 100%;
   box-sizing: border-box;
   background-color: #353535;
-  box-sizing: border-box;
   margin-top: 40px;
 }
 footer .feet {
@@ -618,6 +595,8 @@ span {
 .footrestau {
   margin-top: 1300px;
 }
+/*section loader*/
+
  .sectionl {
     margin: 0; 
     position: absolute;
@@ -631,22 +610,18 @@ span {
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
     text-align: center;
     background-color: rgb(247, 240, 231, 1);
-    z-index: 2;
-    opacity: 1;
-    content: "Ohmyfood ...";
+    z-index: -3;
+    opacity: 0;
     animation: load 5s linear;
     animation-delay: 0.5s;
-    animation-iteration-count:1;
-  } 
+    } 
 
   @keyframes load {
     0% {
-      /* transform: translate(0);  */
-      z-index: 2;opacity: 1;
+     z-index: 2;opacity: 1;
     }
    
     100% {
-      /* transform: translate(-9999px);  */
       opacity: 0;z-index: -3;
     }
   }
@@ -910,7 +885,9 @@ span {
   }
   footer {
     width: 100%;
-    margin-top: 0;
+    margin-top: 180px;
+    height: 200px;
+ 
   }
   .footerrestau {
     margin-top: 1290px;

@@ -1,8 +1,32 @@
 $primary-color: #9356dc;
 $second-color: #ff79da;
 $tierce-color:#99e2d0;
+$color-grey:#353535;
+$newscolor:#008766;
 $font1:"shrickhand";
 $font2:"roboto";
 $icone1:#7e7e7e;
 $iconeblc:#ffffff;
-$newscolor:#008766;
+$iconeblack:#000000;
+
+@mixin box-shadow45{box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);}
+@mixin box-shadow25{box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)}
+@mixin box-shadow15{box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)}
+@mixin card{ 
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;}
+@mixin linearGradient{background: (193.33deg, #9356dc -11.44%, #ff79da 123.93%)}
+@mixin textshadow45{text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45)}
+@mixin heart{display: flex;
+    margin: 20px;
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;}

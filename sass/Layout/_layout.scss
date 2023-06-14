@@ -1,3 +1,11 @@
+body {
+  min-width: 320px;
+  background-color: #f7f7f7;
+  margin: 0;
+}
+
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -24,25 +32,31 @@ header {
       align-items: center;
       gap: 10px;
     }
-    .restaurants{height: 63px;display: flex;}
+    
   }
-  .border {border-bottom: #99e2d0 3px solid; padding-bottom: 10px;
  
-    width: 40px;
-  }
   footer {
-    background-color: #353535;
-    margin-top: 40px;.feet {
+    width: 100%;
+  box-sizing: border-box;
+  background-color: #353535;
+  margin-top: 40px;
+    .feet {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     align-items: flex-start;
+    .Shrik1 {
+      font-family: $font1;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ffffff;
+    }
   }
-  
-
-  
   .foot {
-    padding-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
     .iconefooter {
     display: flex;
     align-items: center;
@@ -50,6 +64,7 @@ header {
   }
   }
   }
+  
   
   
   
