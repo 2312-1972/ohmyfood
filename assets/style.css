@@ -633,8 +633,7 @@ span {
     0% {
       transform: rotate(0deg);
     }
-
-    100% {
+100% {
       transform: rotate(360deg);
   } 
 }
@@ -827,7 +826,6 @@ span {
   .homecard {
     margin-top: 20px;
   }
-  /*pages restau*/
   .images {
     width: 100%;
     object-fit: cover;
@@ -843,7 +841,8 @@ span {
     .srestau .block-title .titlerestau  {
       width: 62%;
      }
-.restau {
+
+  .restau {
     padding-top: 30px;
     width: 50%;
   }
@@ -866,6 +865,5 @@ span {
   .footerrestau2 {
     margin-top: 1380px;
   }
-/*loader*/
- .sectionl{font-size: 60px;}
+.sectionl{font-size: 60px;}
 }

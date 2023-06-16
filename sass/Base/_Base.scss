@@ -1,65 +1,91 @@
 .h1 {
-    font-family: $font1;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center; 
-    
-  }
-  
- .h1_style1 {
-    text-align: start;
-    padding-left: 10px;
-    padding-top: 40px;
-  }
-  
-  .h2 {
-    font-family: "roboto";
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px; 
- .h2_gris {
-    color: $color-grey;
-  }
-  
-  .h2_blc {
-    color: #ffffff;
-  }
+  font-family: $font2;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.h1_style1 {
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.h2 {
+  font-family: "roboto";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.h2_gris {
+  color: $color-grey;
+}
+.h2_black {
+  color: black;
+}
+.h2_blc {
+  color: #ffffff;
   .h2_blc--400 {
     font-weight: 400;
   }
-  
-  .h2_black {
-    color: black;
+}
+h3 {
+  font-family: $font2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  @include ellipsis;
+}
+h4 {
+  font-family: $font2;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0;
+}
+.h4 {
+  color: white;
+}
+h5 {
+  font-family: $font2;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 16px;
+  color: $newscolor;
+}
+p {
+  font-family: $font2;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: $color-grey;
+}
+img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 68%;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 767.8px) {
+  .h1_style1 {
+    margin-left: 100px;
   }
-  }
-  h5 {
-    font-family: $font2;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 16px;
-    color: $newscolor;
-    
-  }
-  p {
-    font-family: $font2;
-    font-weight: 300;
-    font-size: 18px;
-    text-align: center;
-    color: $color-grey;
+}
+@media screen and (min-width: 1199px) {
+  .h1_style1 {
+    margin-left: 180px;
   }
   img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 65%;
-    width: 100%;
-    object-fit: cover;
+    height: 75%;
   }
-  
- 
- 
-  
-  
-  
+  .h1d {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+  }
+}

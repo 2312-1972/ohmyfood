@@ -5,18 +5,21 @@
   width: 218px;
   height: 50px;
   text-align: center;
+  padding-top: 5px;
+  margin-bottom: 20px;
   position: relative;
   transition-property: transform;
-  transition: all 400ms;
+  transition: all 500ms;
   &:hover {
-    transform: scale(1.15);
-    @include box-shadow25;
+    transform: scale(1);
+    @include box-shadow45;
     @include linearGradient;
     opacity: 70%;
   }
-  a {
-    text-decoration: none; color: #000000;
-  }
+}
+a {
+  text-decoration: none;
+  color: #000000;
 }
 .btn {
   display: flex;
@@ -36,13 +39,22 @@
     transform: scale(1);
     @include box-shadow45;
     opacity: 70%;
-    .fa-mobile-screen-button,.fa-list,.fa-store {
+    .fa-mobile-screen-button,
+    .fa-list,
+    .fa-store {
       color: $primary-color;
     }
+  }
 }
+.fa-handshake-angle,
+.fa-utensils {
+  color: $iconeblc;
 }
-.fa-handshake-angle,.fa-utensils{color:$iconeblc}
-.fa-mobile-screen-button,.fa-list,.fa-store{ color:$icone1}
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store {
+  color: $icone1;
+}
 .fa-arrow-left {
   position: absolute;
   top: 30px;
@@ -51,6 +63,11 @@
 }
 .fa-check {
   color: $tierce-color;
+}
+.fa-heart {
+  color: black;
+  position: absolute;
+  line-height: 1;
 }
 .heart {
   @include heart;
@@ -69,10 +86,10 @@
     opacity: 1;
     @include lineargradientimg;
     line-height: 1;
-  background-clip: text;
-  -webkit-background-clip: text;
-  line-height: 1;
-  transform: scale(1.15);
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 1;
+    transform: scale(1.15);
   }
 }
 .sectionrestau {
@@ -81,29 +98,27 @@
   background-color: #f7f7f7;
   border-top: 25px;
   width: 100%;
-  box-sizing: border-box; height: 1307px;
+  box-sizing: border-box;
+  height: 1307px;
   margin: 0;
   .block-title {
-  position: absolute;
-  width: 341px;
-  height: 27px;
-  left: 17px;
-  top: 0px;
-  .titlerestau{ 
-    font-size:28px; 
-    font-style:italic; 
-    font-weight:400; 
-    line-height:41px;
-    font-family:$font1;}
-  .heartrestau{
-    padding-left: 320px;
-    padding-top: 10px;}
-}
-}
-.images {
-  border-radius: 0;
-  object-fit: cover;
-  z-index: 0;
+    position: absolute;
+    width: 341px;
+    height: 27px;
+    left: 17px;
+    top: 0px;
+    .titlerestau {
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 41px;
+      font-family: $font1;
+    }
+    .heartrestau {
+      padding-left: 320px;
+      padding-top: 10px;
+    }
+  }
 }
 .btnrestau {
   box-sizing: border-box;
@@ -119,72 +134,84 @@
   @include box-shadowrestau;
   cursor: pointer;
   position: relative;
-  @include ellipsis; 
+  @include ellipsis;
   .check {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 59px;
-  height: 69px;
-  background-color: #99e2d0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transition: all 0.6s;
-  transform: translate(0);
-  .valid {
-    margin-left: 20px;
-    margin-top: 25px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 59px;
+    height: 69px;
+    background-color: #99e2d0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.6s;
+    transform: translate(0);
+    .valid {
+      margin-left: 20px;
+      margin-top: 25px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+    }
   }
-}
-.h1recipe {
-  font-family:$font2;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21px;
-  padding-left: 10px;
-  margin: 0;
-  @include ellipsis;
-}
-.sub€ {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  width: 92%;
-  @include ellipsis;
-  .subtitlerecipe {
-    position: relative;
-    display: inline;
-    height: 16px;
+  .h1recipe {
     font-family: $font2;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    padding-left: 10px;
+    margin: 0;
     @include ellipsis;
   }
-  .€ {
-    font-weight: 700;
+  .sub€ {
+    overflow: hidden;
     display: flex;
-    height: 16px;
-    font-family: $font2;
-    font-size: 15px;
-    line-height: 18px;
-    position: relative;
-    transform: translate(0);
-    transition: all 0.6s;
- }
- 
-}
-  &:hover + .check{transform: translate(-100%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);}    
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 92%;
+    @include ellipsis;
+    .€ {
+      font-weight: 700;
+      display: flex;
+      height: 16px;
+      font-family: $font2;
+      font-size: 15px;
+      line-height: 18px;
+      position: relative;
+      transform: translate(0);
+      transition: all 0.6s;
+    }
   }
-.btnrestau:hover .€{transform: translate(-220%);}
-
-
-.explorer3{margin-top: 30px;}
-
+}
+.btnrestau .sub€ .subtitlerecipe {
+  position: relative;
+  display: inline;
+  height: 16px;
+  font-family: "roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 15px;
+  @include ellipsis;
+}
+.btnrestau:hover .subtitlerecipe {
+  transition: margin-right 0.5s ease;
+  margin-right: 80px;
+  @include ellipsis;
+}
+.btnrestau:hover .check {
+  transform: translate(-100%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
+}
+.btnrestau:hover .€ {
+  transform: translate(-220%);
+}
+.explorer3 {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1199px) {
+   .btn {
+    width: 75%;
+   }
+}

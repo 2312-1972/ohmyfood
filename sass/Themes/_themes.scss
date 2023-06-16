@@ -1,11 +1,11 @@
 .sectionl {
-  margin: 0; 
+  margin: 0;
   position: absolute;
   padding-top: 500px;
   height: 3000px;
   width: 100%;
   line-height: 3000px;
-  font-family: shrikhand;
+  font-family: $font1;
   font-size: 30px;
   color: $primary-color;
   @include textshadow45;
@@ -15,27 +15,29 @@
   opacity: 0;
   animation: load 5s linear;
   animation-delay: 0.5s;
-  } 
-
+}
 @keyframes load {
   0% {
-   z-index: 2;opacity: 1;
+    z-index: 2;
+    opacity: 1;
   }
- 
+
   100% {
-    opacity: 0;z-index: -3;
+    opacity: 0;
+    z-index: -3;
   }
 }
- .loader {
+.loader {
   width: 150px;
   height: 150px;
   border-radius: 100px;
   vertical-align: middle;
   display: inline-block;
   position: relative;
-  .loader-rotate {
+}
+.loader-rotate {
   width: 150px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+  @include box-shadow45;
   border: 6px solid rgb(106, 90, 205, 0.8);
   border-top: $primary-color;
   border-bottom: $primary-color;
@@ -54,9 +56,7 @@
   border-bottom: 6px solid $tierce-color;
   animation: rotate 2s linear infinite;
   animation-delay: 0.5s;
-} 
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -64,8 +64,21 @@
 
   100% {
     transform: rotate(360deg);
-} 
+  }
 }
- 
-   
-  
+@media screen and (min-width: 767.8px) {
+  .sectionl {
+    font-size: 60px;
+  }
+  .loader {
+    width: 500px;
+    height: 500px;
+    border-radius: 450px;
+  }
+  .loader-rotate {
+    width: 500px;
+  }
+  .loader-rotate:after {
+    border-radius: 450px;
+  }
+}

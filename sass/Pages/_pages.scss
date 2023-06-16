@@ -1,40 +1,32 @@
 .section1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-sizing: border-box;
-  }
-  .blockcard {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: space-between;
-  }
-  .blockcard_child {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    box-sizing: border-box;
-  }
-  .card {
-   @include card;
-  }
-  .new {
-    display: flex;
-    position: absolute;
-    box-sizing: border-box;
-    width: 80px;
-    height: 29px;
-    background:$tierce-color;
-    @include box-shadow15;
-    border-radius: 2px;
-    margin-left: 250px;
-    margin-top: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+.blockcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card {
+  @include card;
+}
+.new {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  width: 80px;
+  height: 29px;
+  background: $tierce-color;
+  @include box-shadow15;
+  border-radius: 2px;
+  margin-left: 250px;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -43,40 +35,118 @@
   margin-top: 10px;
 }
 .section2 {
-    box-sizing: border-box;
-    background-color: #ffffff;
-    height: 441px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .explorer {
-    display: flex;
-    justify-content: center;
-  }
-  .explorer2 {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
-    margin-top: 30px; 
-    .Num {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 441px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.explorer {
+  display: flex;
+  justify-content: center;
+}
+.explorer2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-top: 30px;
+  .Num {
     display: flex;
     align-items: center;
     width: 100%;
     .N {
-    width: 24px;
-    height: 24px;
-    background: $primary-color;
-    border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      background: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      display: flex;
+      position: relative;
+      left: 10px;
+      z-index: 1;
+    }
+  }
+}
+@media screen and (min-width: 767.8px) {
+  .explorer2 {
+    margin-left: 200px;
+    width: 60%;
+  }
+  .back {
+    background-color: $back;
+    padding-top: 20px;
+  }
+  .fulls {
+    padding-right: 530px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  .blockcard {
+    width: 80%;
+    margin-left: 100px;
+  }
+  .new {
+    margin-left: 600px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  body {
+    height: 1395px;
+    background-color: $back;
+  }
+  .explorer2 {
+    display: flex;
+    width: 75%;
+    height: 250px;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .section1 {
+    justify-content: space-between;
+    margin-left: 40px;
+  }
+  .blockcard {
+    margin: 0;
+    align-items: center;
+    width: 75%;
+  }
+  .blockcard_child {
     display: flex;
     justify-content: center;
+    margin-left: 280px;
+    width: 75%;
+    padding-bottom: 80px;
+  }
+  .homecard {
+    margin-top: 10px;
+  }
+  .card {
+    width: 500px;
+    margin-left: 60px;
+    height: 300px;
+  }
+  .section2 {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 30px;
     display: flex;
-    position: relative;
-    left: 10px;
-    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    height: 271px;
   }
+  .fulls {
+    margin: 0;
+    margin-left: 200px;
   }
+  .new {
+    margin-left: 380px;
   }
- 
-  
+}
