@@ -133,8 +133,7 @@ footer .foot .iconefooter {
     transform: scale(0);
     opacity: 0;
   }
-  85%,
-  100% {
+  85%, 100% {
     opacity: 1;
   }
   100% {
@@ -150,8 +149,7 @@ footer .foot .iconefooter {
     transform: scale(0);
     opacity: 0;
   }
-  85%,
-  100% {
+  85%, 100% {
     opacity: 1;
   }
   100% {
@@ -167,8 +165,7 @@ footer .foot .iconefooter {
     transform: scale(0);
     opacity: 0;
   }
-  85%,
-  100% {
+  85%, 100% {
     opacity: 1;
   }
   100% {
@@ -186,7 +183,7 @@ footer .foot .iconefooter {
 .images {
   border-radius: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   z-index: 0;
   height: 240px;
 }
@@ -220,9 +217,6 @@ footer .foot .iconefooter {
   }
   .explorer {
     padding-top: 35px;
-  }
-  .new {
-    margin-left: 75%;
   }
   /*restaurants*/
   .srestau {
@@ -305,9 +299,6 @@ footer .foot .iconefooter {
   .N {
     width: 9%;
   }
-  .new {
-    margin-left: 390px;
-  }
   .h1d {
     font-family: "roboto";
     font-weight: 700;
@@ -321,7 +312,7 @@ footer .foot .iconefooter {
   .images {
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     height: 440px;
   }
   .srestau {
@@ -468,11 +459,7 @@ a {
 }
 .heart-full:hover {
   opacity: 1;
-  background-image: linear-gradient(
-    193.33deg,
-    #9356dc -11.44%,
-    #ff79da 123.93%
-  );
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   line-height: 1;
   background-clip: text;
   -webkit-background-clip: text;
@@ -703,7 +690,7 @@ img {
   height: 68%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 767.8px) {
@@ -923,7 +910,7 @@ img {
     margin-left: 100px;
   }
   .new {
-    margin-left: 600px;
+    margin-left: 60px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -978,4 +965,4 @@ img {
   .new {
     margin-left: 380px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
